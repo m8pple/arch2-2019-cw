@@ -120,7 +120,7 @@ Simulator Input/Output
 Your Simulator will be a single executable, and has the following behaviour:
 
 - *Binary* : the Binary location is passed as a command-line parameter, and
-  should be the path of a binary file containing MIPS-1 little-endian instructions.
+  should be the path of a binary file containing MIPS-1 big-endian instructions.
   These instructions should be loaded into a fixed region of "RAM" with a known
   address, then execution should start at the first address in this region.
 
@@ -427,9 +427,8 @@ INTERNAL|  Not associated with a specific instruction |
 FUNCTION|  Testing the ability to support functions   |
 STACK   |  Testing for functions using the stack      |
 
-The final instructions are pseudo-instructions, for cases where
-
-
+The final instructions are pseudo-instructions, for cases where they don't map to
+a single instruction.
 
 Assessment
 ==========
