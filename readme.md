@@ -168,9 +168,9 @@ Simulator build and execution
 -----------------------------
 
 The compiler should be buildable using the command:
-````
+```
 make simulator
-````
+```
 in the root of the respository. This should result
 in a binary called `bin/mips_simulator`. An artificial requirement of
 this coursework for assessment purposes (i.e. it isn't really
@@ -178,18 +178,18 @@ required for API reasons) is that the simulator is:
 - A binary compiled from C++ sources.
 - It can be compiled in the target Environment.
 This means that if the following sequence is executed:
-````
+```
 rm bin/mips_simulator
 make simulator
-````
+```
 Then a new binary will be compiled from C++ sources that are
 included in the submission.
 
 If we assume the existence of a Binary called `x.bin`, we would
 simulate it using:
-````
+```
 bin/mips_simulator x.bin
-````
+```
 On startup all MIPS registers will be zero, any uninitialised
 memory will be zero, and the program counter will point at the
 first instruction in memory.
@@ -204,7 +204,7 @@ Testbench Input/Output
 A Testbench should take a single command-line parameter,
 which is the path of the Simulator to be tested.
 
-As output, the simulator should print a CSV file, where each row of
+As output, the Testbench should print a CSV file, where each row of
 the file corresponds to exactly one execution of the Simulator under test.
 Each row should have the following fields:
 ```
@@ -247,20 +247,20 @@ Testbench build and executable
 ------------------------------
 
 The Testbench should be built (or otherwise setup) using:
-````
+```
 make testbench
-````
+```
 _Note: it is entirely possible that nothing needs to happen when
 this is executed. It is to allow for freedom of implementation._
 
 This should result in an executable called:
-````
+```
 bin/mips_testbench
-````
+```
 _Note: this only needs to be an executable file; so unlike the Simulator
-it does not need to be binary built from C, and could be a bash script._
+it does not need to be binary built from C++, and could be a bash script._
 
-The Simulator will _always_ be executed from within the root directory of
+The Testbench will _always_ be executed from within the root directory of
 the submission, so you can use relative paths to data files.
 
 Any temporary or working files created during execution should be created in a directory
@@ -269,36 +269,37 @@ example per-test logfiles) should be created in `test/output`. However, there is
 requirement that output is created in either directory.
 
 An example of running the Testbench on it's own Simulator would be:
-````
+```
 bin/mips_testbench  bin/mips_simulator
-````
+```
 corresponding output might be:
-````
+```
 0, ADDU, Pass
 1, ADD, Pass
 2, ADDI, Pass
-````
+```
 
 If we assume a different Testbench, and have a Simulator at the
 path `../other-simulator/bin/mips_simulator`, then we could execute with:
-````
+```
 bin/mips_testbench   ../other-simulator/bin/mips_simulator
-````
+```
 and the corresponding output might be:
-````
+```
 jr1 ,   jr,   Pass,   Single JR statement back to NULL
 addi1 , addi, Pass,   Add 5 to $0
 addi2 , addi, Fail,   Add -5 to $0
 jr2 ,   jr,   Pass,   JR->NOP->JR->NOP
-````
+```
 
 Memory-Map
 ----------
 
 The memory map of the simulated process is as follows:
 
+```
 Offset     |  Length     | Name       | R | W | X | Cached |
------------|-------------|------------|---|---|---|--------|-------------------------------------------------------------
+-----------|-------------|------------|---|---|---|--------|--------------------------------------------------------------------
 0x00000000 |        0x4  | ADDR_NULL  |   |   | Y |        | Writing to this address means the Binary has finished execution.
 0x00000004 |  0xFFFFFFC  | ....       |   |   |   |        |
 0x10000000 |  0x1000000  | ADDR_INSTR | Y |   | Y |      Y | Executable memory. The Binary should be loaded here.
@@ -308,7 +309,8 @@ Offset     |  Length     | Name       | R | W | X | Cached |
 0x30000000 |        0x4  | ADDR_GETC  | Y |   |   |        | Location of memory mapped input. Read-only.
 0x30000004 |        0x4  | ADDR_PUTC  |   | Y |   |        | Location of memory mapped input. Write-only.
 0x30000008 | 0xCFFFFFF8  | ....       |   |   |   |        |
------------|-------------|------------|---|---|---|--------|-------------------------------------------------------------
+-----------|-------------|------------|---|---|---|--------|--------------------------------------------------------------------
+```
 
 The Binary is not allowed to modify it's own code, nor should it attempt to execute code outside the executable memory.
 
