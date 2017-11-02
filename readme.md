@@ -43,6 +43,11 @@ hits one of the anticipated problems.
 This specification will still be imprecise, and _will_ evolve. Where there
 is still a lack of clarity, it will be fixed.
 
+Getting started
+===============
+
+The repository created during the lecture is at [LangProc/arch2-2017-cw-dt10](https://github.com/LangProc/arch2-2017-cw-dt10).
+You can use anything within it without worrying about plagiarism. The video recorded while creating it [is also in panopto](https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=81109762-911c-49fe-91ec-a5b7e820e4f3).
 
 Specification
 =============
