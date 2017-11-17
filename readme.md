@@ -279,9 +279,9 @@ bin/mips_testbench  bin/mips_simulator
 ```
 corresponding output might be:
 ```
-0, ADDU, Pass
-1, ADD, Pass
-2, ADDI, Pass
+0, ADDU, Pass, dt10
+1, ADD, Pass, dt10
+2, ADDI, Pass, dt10
 ```
 
 If we assume a different Testbench, and have a Simulator at the
@@ -291,10 +291,10 @@ bin/mips_testbench   ../other-simulator/bin/mips_simulator
 ```
 and the corresponding output might be:
 ```
-jr1 ,   jr,   Pass,   Single JR statement back to NULL
-addi1 , addi, Pass,   Add 5 to $0
-addi2 , addi, Fail,   Add -5 to $0
-jr2 ,   jr,   Pass,   JR->NOP->JR->NOP
+jr1 ,   jr,   Pass, dt10,   Single JR statement back to NULL
+addi1 , addi, Pass, hes2,   Add 5 to $0
+addi2 , addi, Fail, hes2,   Add -5 to $0
+jr2 ,   jr,   Pass, hes2,   JR->NOP->JR->NOP
 ```
 
 Memory-Map
