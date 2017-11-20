@@ -440,12 +440,47 @@ a single instruction.
 Assessment
 ==========
 
-This space intentionally left blank until groups are sorted out.
+Assessment is broken down into three components:
+
+- Group: 80%
+
+  - Simulator : 50% (pairs) / 40% (triples)
+
+  - Testbench : 30% (pairs) / 40% (triples)
+  
+- Individual: 20%
+  
+  - Reflection : 20% (individual)
+
+Each group will be assigned a shared mark based on
+the objective correctness of the simulator and
+testbenches.
+
+Groups must also come to a shared decision on how
+each member contributed to the group, and include
+a `contribution.md` which attempts to assign credit
+on different aspects of the project. This will be
+turned into an individual score between -2 and +2
+where the total within a group is 0, and used to
+additively adjust the group component. So the
+_maximum_ influence of this is +-2% overall.
+
+Individuals should submit an individual copy of
+`reflection.md`.
 
 Submission
 ==========
 
-Submission is via github _and_ blackboard, and will be elaborated on later.
+Submission is via github _and_ blackboard:
+
+- Make sure you have pushed to your group github repo
+
+- All group members submit the _hash_ of their submission via
+  blackboard (not a zip). All members should submit the same
+  hash (to show agreement). If there is any discrepancy, the
+  earliest hash (in commit history terms) will be used.
+  
+- Each individual submits a copy of `reflection.md` to blackboard.
 
 Additional Notes
 ================
