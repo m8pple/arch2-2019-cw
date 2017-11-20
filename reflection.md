@@ -55,7 +55,7 @@ There is no "right" answer, and there is no particular
 requirement on how "big" each thing is, either in concept
 size or the number of words. There is also no bias towards
 whether a strength or weakness is better - either could be
-relevant. The main requirements are that the answers should be:
+relevant. The only requirements are that the answers should be:
 
 - Specific to you
 
@@ -63,11 +63,15 @@ relevant. The main requirements are that the answers should be:
 
 - Be some sort of genuine reflection on your practise
 
+- Related to the specific topic
+
+This will be assessed, and is not just a tick box exercise.
+
 Submission
 ----------
 
 This should be submitted individually via blackboard (not
-via the 
+via the group repo).
 
 Group working
 -------------

@@ -450,7 +450,7 @@ Assessment is broken down into three components:
   
 - Individual: 20%
   
-  - Reflection : 20% (individual)
+  - Reflection : 20%
 
 Each group will be assigned a shared mark based on
 the objective correctness of the simulator and
@@ -465,8 +465,7 @@ where the total within a group is 0, and used to
 additively adjust the group component. So the
 _maximum_ influence of this is +-2% overall.
 
-Individuals should submit an individual copy of
-`reflection.md`.
+Individuals should submit an individual copy of `reflection.md`.
 
 Submission
 ==========
