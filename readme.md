@@ -435,7 +435,9 @@ FUNCTION|  Testing the ability to support functions   |
 STACK   |  Testing for functions using the stack      |
 
 The final instructions are pseudo-instructions, for cases where they don't map to
-a single instruction.
+a single instruction. You are not required to use them, but they may be useful
+for tests which are looking at more complex functionality, rather than narrowly
+looking at one.
 
 Assessment
 ==========
