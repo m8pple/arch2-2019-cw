@@ -209,7 +209,7 @@ Testbench Input/Output
 A Testbench should take a single command-line parameter,
 which is the path of the Simulator to be tested.
 
-As output, the Testbench should print a CSV file, where each row of
+As output, the Testbench should [print a CSV file](https://github.com/m8pple/arch2-2017-cw/issues/24), where each row of
 the file corresponds to exactly one execution of the Simulator under test.
 Each row should have the following fields:
 ```
