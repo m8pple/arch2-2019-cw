@@ -474,14 +474,16 @@ Submission
 
 Submission is via github _and_ blackboard:
 
-- Make sure you have pushed to your group github repo
+- Make sure you have pushed to your group github repo.
 
 - All group members submit the _hash_ of their submission via
   blackboard (not a zip). All members should submit the same
   hash (to show agreement). If there is any discrepancy, the
-  earliest hash (in commit history terms) will be used.
+  earliest hash submitted (in commit history terms) will be used.
+  The deadline is Fri 8th at 22:00.
   
-- Each individual submits a copy of `reflection.md` to blackboard.
+- Each individual submits a copy of `reflection.md` to blackboard
+  by Mon 11th at 22:00.
 
 Additional Notes
 ================
