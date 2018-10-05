@@ -43,12 +43,6 @@ hits one of the anticipated problems.
 This specification will still be imprecise, and _will_ evolve. Where there
 is still a lack of clarity, it will be fixed.
 
-Getting started
-===============
-
-The repository created during the lecture is at [LangProc/arch2-2017-cw-dt10](https://github.com/LangProc/arch2-2017-cw-dt10).
-You can use anything within it without worrying about plagiarism. The video recorded while creating it [is also in panopto](https://imperial.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=81109762-911c-49fe-91ec-a5b7e820e4f3).
-
 Specification
 =============
 
@@ -56,11 +50,6 @@ Your task is to develop a MIPS CPU simulator, which can accurately execute
 MIPS-1 big-endian binaries. You will also need to develop a testbench
 which is able to test a MIPS simulator, and try to work out whether it
 is correct.
-
-_Note: I was originally going to add a cache extension once we got to
-that part of the course, but on reflection decided it added more
-complexity than was needed. The goal here is purely to get a good
-simulator working._
 
 Terminology
 -----------
@@ -446,9 +435,9 @@ Assessment is broken down into three components:
 
 - Group: 80%
 
-  - Simulator : 50% (pairs) / 40% (triples)
+  - Simulator : 50%
 
-  - Testbench : 30% (pairs) / 40% (triples)
+  - Testbench : 30%
   
 - Individual: 20%
   
@@ -458,16 +447,63 @@ Each group will be assigned a shared mark based on
 the objective correctness of the simulator and
 testbenches.
 
-Groups must also come to a shared decision on how
-each member contributed to the group, and include
-a `contribution.md` which attempts to assign credit
-on different aspects of the project. This will be
-turned into an individual score between -2 and +2
-where the total within a group is 0, and used to
-additively adjust the group component. So the
-_maximum_ influence of this is +-2% overall.
-
 Individuals should submit an individual copy of `reflection.md`.
+
+### Marks allocation
+
+For EIE2 students this mark forms 1/3 of your computing lab marks,
+while for DoC3 students this coursework forms the 15% coursework part
+of the module.
+
+                  | EIE2M  | EIE2B  | DoC3M  |  DoC3B
+-----------------------------------------------------
+Module            |     0% |     0% | 15.00% | 15.00%
+Computing lab     | 33.00% | 33.00% |     0% |     0%
+Within Year       |  4.00% |  4.00% |  1.59% |  1.24%
+Within degree     |  0.89% |  1.50% |  0.35% |  0.54% 
+-----------------------------------------------------
+ECTS for CW       |      2 |      2 |    0.6 |    0.6
+Hours (by ECTS)   |     50 |     50 |     15 |     15
+
+Note that one ECTS is 25-30 hours, so the above hours are only
+going by the ECTS allocated according to module weights. It
+should not take 100 person-hours per EIE2 group, nor should
+it take 30 person-hours per DoC3 group.
+
+EIE2 students will find that they spend a lot of time learning
+general programming skills that in principle were already mastered
+in 1st year. There will also be a time spent learning to use tools
+and infrastructure, which is needed throughout the degree - there
+is plenty of time for the coursework so that this learning can
+be spread out. A more reasonable estimate is ~50 person-hours per
+group, as long as it is spread out (it will take longer if it
+is done in a rush at the end).
+
+DoC3 students will already have mastered the programming and infrastructure
+side of things, so this coursework is only intended to learn the
+details of the MIPS ISA is designed and operates. A pair of
+competent 3rd year students should be able to complete the coursework
+in less than 12 person-hours (i.e. much less than one working day),
+_as long as they have read the book and understood how the ISA works upfront_.
+If you are reading the book and learning as you go it will obviously take
+longer.
+
+Groups
+======
+
+You will do this coursework in self-selected pairs. Anyone left without
+a group will be randomly paired up. If we end up with a singleton
+due to class numbers, they will be injected into into a randomly chosen pair.
+
+Please register your chosen pair in [this spreadsheet](https://imperiallondon-my.sharepoint.com/:x:/g/personal/dt10_ic_ac_uk/EeFLFNk36yhDsaNcpqwI4LoBZa7purL4ZelLxxMigLQhDQ?e=g4mOXm). You'll need to login to Office with your imperial credentials - note that changes to
+the spreadsheet are attributed to the logged in user.
+
+Once pairs are finalised, you'll receive an invitation to a private github repository
+for your pair, which will have the form:
+```
+https://github.com/LangProc/langproc-2018-cw-{group_name}
+```
+Only the people in your group and teaching staff can access this repository.
 
 Submission
 ==========
@@ -480,10 +516,10 @@ Submission is via github _and_ blackboard:
   blackboard (not a zip). All members should submit the same
   hash (to show agreement). If there is any discrepancy, the
   earliest hash submitted (in commit history terms) will be used.
-  The deadline is Fri 8th at 22:00.
+  The deadline is Wed Nov 28th at 22:00.
   
 - Each individual submits a copy of `reflection.md` to blackboard
-  by Mon 11th at 22:00.
+  by Wed 28th at 22:00.
 
 Additional Notes
 ================

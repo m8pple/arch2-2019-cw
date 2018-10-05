@@ -43,8 +43,8 @@ Whereas these are more specific (don't use these as a template, you
 have to word):
 
 > Originally I wasn't sure how to map part A of the simulator into
-> classes, so I originally thought about mapping each B to an
-> object. However, this turned out to be the wrong approach
+> structs, so I originally thought about mapping each B to an
+> struct. However, this turned out to be the wrong approach
 > because C, so we ended up using D.
 
 > I suggested that we use method A to build the testbench, as I
