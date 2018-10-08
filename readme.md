@@ -455,15 +455,15 @@ For EIE2 students this mark forms 1/3 of your computing lab marks,
 while for DoC3 students this coursework forms the 15% coursework part
 of the module.
 
-                  | EIE2M  | EIE2B  | DoC3M  |  DoC3B
-------------------|--------|--------|--------|-------
-Module            |     0% |     0% | 15.00% | 15.00%
-Computing lab     | 33.00% | 33.00% |     0% |     0%
-Within Year       |  4.00% |  4.00% |  1.59% |  1.24%
-Within degree     |  0.89% |  1.50% |  0.35% |  0.54%
-------------------|--------|--------|--------|-------
-ECTS for CW       |      2 |      2 |    0.6 |    0.6
-Hours (by ECTS)   |     50 |     50 |     15 |     15
+|                  | EIE2M  | EIE2B  | DoC3M  |  DoC3B |
+|------------------|--------|--------|--------|--------|
+|Module            |     0% |     0% | 15.00% | 15.00% |
+|Computing lab     | 33.00% | 33.00% |     0% |     0% |
+|Within Year       |  4.00% |  4.00% |  1.59% |  1.24% |
+|Within degree     |  0.89% |  1.50% |  0.35% |  0.54% |
+|------------------|--------|--------|--------|--------|
+|ECTS for CW       |      2 |      2 |    0.6 |    0.6 |
+|Hours (by ECTS)   |     50 |     50 |     15 |     15 |
 
 Note that one ECTS is 25-30 hours, so the above hours are only
 going by the ECTS allocated according to module weights. It
