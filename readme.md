@@ -456,12 +456,12 @@ while for DoC3 students this coursework forms the 15% coursework part
 of the module.
 
                   | EIE2M  | EIE2B  | DoC3M  |  DoC3B
------------------------------------------------------
+------------------|--------|--------|--------|-------
 Module            |     0% |     0% | 15.00% | 15.00%
 Computing lab     | 33.00% | 33.00% |     0% |     0%
 Within Year       |  4.00% |  4.00% |  1.59% |  1.24%
-Within degree     |  0.89% |  1.50% |  0.35% |  0.54% 
------------------------------------------------------
+Within degree     |  0.89% |  1.50% |  0.35% |  0.54%
+------------------|--------|--------|--------|-------
 ECTS for CW       |      2 |      2 |    0.6 |    0.6
 Hours (by ECTS)   |     50 |     50 |     15 |     15
 
@@ -501,7 +501,7 @@ the spreadsheet are attributed to the logged in user.
 Once pairs are finalised, you'll receive an invitation to a private github repository
 for your pair, which will have the form:
 ```
-https://github.com/LangProc/langproc-2018-cw-{group_name}
+https://github.com/LangProc/arch2-2018-cw-{group_name}
 ```
 Only the people in your group and teaching staff can access this repository.
 
