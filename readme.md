@@ -505,21 +505,39 @@ https://github.com/LangProc/arch2-2018-cw-{group_name}
 ```
 Only the people in your group and teaching staff can access this repository.
 
-Submission
-==========
+Interim Submission
+==================
+
+Prior to your formative assessment on 7 Nov, your code will be pulled and tested to help establish how you are progressing.
+If you would like a particular commit to be tested:
+
+- Push to your repo.
+
+- Submit the _hash_ of your desired commit via Blackboard (Assessments > MIPS Simulator: Formative).
+  The deadline for this is Mon 5 Nov at 22:00.
+  
+For groups that submit no hashes, the latest version of your code will be pulled and tested instead.
+For groups that submit two hashes, the earliest hash submitted (in commit history terms) will be used.
+  
+The testing performed will be limited, only checking ADDU and JR functionality.
+
+Note that this assessment carries no weighting, but attendance is mandatory.
+
+Final Submission
+================
 
 Submission is via github _and_ blackboard:
 
 - Make sure you have pushed to your group github repo.
 
 - All group members submit the _hash_ of their submission via
-  blackboard (not a zip). All members should submit the same
+  Blackboard (Assessments > MIPS Simulator: Summative). All members should submit the same
   hash (to show agreement). If there is any discrepancy, the
   earliest hash submitted (in commit history terms) will be used.
-  The deadline is Wed Nov 28th at 22:00.
+  The deadline is Wed 28 Nov at 22:00.
   
 - Each individual submits a copy of `reflection.md` to blackboard
-  by Wed 28th at 22:00.
+  by Wed 28 Nov at 22:00.
 
 Additional Notes
 ================
