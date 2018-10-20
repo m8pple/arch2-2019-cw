@@ -292,21 +292,21 @@ Memory-Map
 The memory map of the simulated process is as follows:
 
 ```
-Offset     |  Length     | Name       | R | W | X | Cached |
------------|-------------|------------|---|---|---|--------|--------------------------------------------------------------------
-0x00000000 |        0x4  | ADDR_NULL  |   |   | Y |        | Jumping to this address means the Binary has finished execution.
-0x00000004 |  0xFFFFFFC  | ....       |   |   |   |        |
-0x10000000 |  0x1000000  | ADDR_INSTR | Y |   | Y |      Y | Executable memory. The Binary should be loaded here.
-0x11000000 |  0xF000000  | ....       |   |   |   |        |
-0x20000000 |  0x4000000  | ADDR_DATA  | Y | Y |   |      Y | Read-write data area. Should be zero-initialised.
-0x24000000 |  0xC000000  | ....       |   |   |   |        |
-0x30000000 |        0x4  | ADDR_GETC  | Y |   |   |        | Location of memory mapped input. Read-only.
-0x30000004 |        0x4  | ADDR_PUTC  |   | Y |   |        | Location of memory mapped output. Write-only.
-0x30000008 | 0xCFFFFFF8  | ....       |   |   |   |        |
------------|-------------|------------|---|---|---|--------|--------------------------------------------------------------------
+Offset     |  Length     | Name       | R | W | X |
+-----------|-------------|------------|---|---|---|--------------------------------------------------------------------
+0x00000000 |        0x4  | ADDR_NULL  |   |   | Y | Jumping to this address means the Binary has finished execution.
+0x00000004 |  0xFFFFFFC  | ....       |   |   |   |
+0x10000000 |  0x1000000  | ADDR_INSTR | Y |   | Y | Executable memory. The Binary should be loaded here.
+0x11000000 |  0xF000000  | ....       |   |   |   |
+0x20000000 |  0x4000000  | ADDR_DATA  | Y | Y |   | Read-write data area. Should be zero-initialised.
+0x24000000 |  0xC000000  | ....       |   |   |   |
+0x30000000 |        0x4  | ADDR_GETC  | Y |   |   | Location of memory mapped input. Read-only.
+0x30000004 |        0x4  | ADDR_PUTC  |   | Y |   | Location of memory mapped output. Write-only.
+0x30000008 | 0xCFFFFFF8  | ....       |   |   |   |
+-----------|-------------|------------|---|---|---|--------------------------------------------------------------------
 ```
 
-The Binary is not allowed to modify it's own code, nor should it attempt to execute code outside the executable memory.
+The Binary is not allowed to modify its own code, nor should it attempt to execute code outside the executable memory.
 
 When a simulated program reads from address `ADDR_GETC`, the simulator should
 - Block until a character is available (e.g. if a key needs to be pressed)
