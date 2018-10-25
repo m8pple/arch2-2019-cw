@@ -1,4 +1,4 @@
-ENTRY(_entry)
+ENTRY(entry)
 SECTIONS
 {
   . = 0x10000000;
