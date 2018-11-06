@@ -39,7 +39,7 @@ bin/mips_simulator: src/simulator.cpp
 	$(CC) $(CPPFLAGS) src/simulator.cpp -o bin/mips_simulator
 
 # Dummy for build simulator to conform to spec
-simulator: bin/simulator
+simulator: bin/mips_simulator
 
 # Dummy for build testbench to conform to spec. Could do nothing
 testbench:
