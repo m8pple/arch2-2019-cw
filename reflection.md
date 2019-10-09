@@ -24,7 +24,12 @@ are:
 
 - Changes in strategy that could help in future projects
 
-
+You may find it difficult to capture things in 100 words,
+and this is part of the challenge - communication is
+an important part of engineering, and it is important to
+be able to condense and summarise things. If a section
+is more than 100 words, then the result will be linearly
+scaled such that at 200 words or more the mark drops to zero.
 
 You should identify things specific to you and this coursework,
 not just general things, and link them to specific features or
@@ -33,14 +38,14 @@ to classes, functions, or source files in your submission,
 and/or highlight specific commits (e.g. by hash) in order to
 show changes.
 
-For example, these is quite generic and doesn't tell us anything:
+For example, these are quite generic and don't tell us anything:
 
 > I learnt how to use classes more effectively.
 
 > I hadn't used the command line much before, and now have got used to it.
 
 Whereas these are more specific (don't use these as a template, you
-have to word):
+have to use your own words):
 
 > Originally I wasn't sure how to map part A of the simulator into
 > structs, so I originally thought about mapping each B to an

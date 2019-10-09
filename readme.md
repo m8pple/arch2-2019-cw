@@ -29,7 +29,7 @@ You might find this document very verbose, and there are lots of
 clauses, clarifications, and restrictions on what you can do.
 So try to think of it from the other side, and imagine you're
 trying to write a spec that:
-1 - will allow around 15 different simulators and testbenches to inter-operate perfectly with each other.
+1 - will allow around 35 different simulators and testbenches to inter-operate perfectly with each other.
 2 - gives as much freedom as possible in the implementation of both simulators and testbenches.
 3 - allows both the simulators _and the testbenches_ to be accurately tested/asssessed.
 
@@ -101,9 +101,9 @@ that Linux+glibc are going to run your Simulator correctly as long as
 your code plays by the rules, and the creator of any Binary will assume
 the same of your Simulator.
 
-The target Evironment will be Ubuntu 16, with the standard GNU toolchain
+The target Evironment will be Ubuntu 18.04, with the standard GNU toolchain
 installed (i.e. `g++`, `make`), standard command line utilities, and
-bash. The lab Unix install should be a model of this environment, so
+bash. The lab dual-boot Unix install should be a model of this environment, so
 anything that works in the lab should be correct. Feel free to use other
 environments during testing and development, but you should test in
 the target environment too.
@@ -198,7 +198,7 @@ Testbench Input/Output
 A Testbench should take a single command-line parameter,
 which is the path of the Simulator to be tested.
 
-As output, the Testbench should [print a CSV file](https://github.com/m8pple/arch2-2017-cw/issues/24), where each row of
+As output, the Testbench should print a CSV file to stdout, where each row of
 the file corresponds to exactly one execution of the Simulator under test.
 Each row should have the following fields:
 ```
@@ -451,27 +451,25 @@ Individuals should submit an individual copy of `reflection.md`.
 
 ### Marks allocation
 
-For EIE2 students this mark forms 1/3 of your computing lab marks,
-while for DoC3 students this coursework forms the 15% coursework part
-of the module.
+This coursework forms 1/3 of your computing lab marks.
 
-|                  | EIE2M  | EIE2B  | DoC3M  |  DoC3B |
-|------------------|--------|--------|--------|--------|
-|Module            |     0% |     0% | 15.00% | 15.00% |
-|Computing lab     | 33.00% | 33.00% |     0% |     0% |
-|Within Year       |  4.00% |  4.00% |  1.59% |  1.24% |
-|Within degree     |  0.89% |  1.50% |  0.35% |  0.54% |
-|------------------|--------|--------|--------|--------|
-|ECTS for CW       |      2 |      2 |    0.6 |    0.6 |
-|Hours (by ECTS)   |     50 |     50 |     15 |     15 |
+|                  | EIE2M  | EIE2B  |
+|------------------|--------|--------|
+|Module            |     0% |     0% |
+|Computing lab     | 33.00% | 33.00% |
+|Within Year       |  4.00% |  4.00% |
+|Within degree     |  0.89% |  1.50% |
+|------------------|--------|--------|
+|ECTS for CW       |      2 |      2 |
+|Hours (by ECTS)   |     50 |     50 |
 
 Note that one ECTS is 25-30 hours, so the above hours are only
 going by the ECTS allocated according to module weights. It
 should not take 100 person-hours per EIE2 group, nor should
 it take 30 person-hours per DoC3 group.
 
-EIE2 students will find that they spend a lot of time learning
-general programming skills that in principle were already mastered
+You may find that you spend a lot of time learning
+general programming skills, that _in principle_ were already mastered
 in 1st year. There will also be a time spent learning to use tools
 and infrastructure, which is needed throughout the degree - there
 is plenty of time for the coursework so that this learning can
@@ -479,14 +477,6 @@ be spread out. A more reasonable estimate is ~50 person-hours per
 group, as long as it is spread out (it will take longer if it
 is done in a rush at the end).
 
-DoC3 students will already have mastered the programming and infrastructure
-side of things, so this coursework is only intended to learn the
-details of the MIPS ISA is designed and operates. A pair of
-competent 3rd year students should be able to complete the coursework
-in less than 12 person-hours (i.e. much less than one working day),
-_as long as they have read the book and understood how the ISA works upfront_.
-If you are reading the book and learning as you go it will obviously take
-longer.
 
 Groups
 ======
@@ -495,33 +485,34 @@ You will do this coursework in self-selected pairs. Anyone left without
 a group will be randomly paired up. If we end up with a singleton
 due to class numbers, they will be injected into into a randomly chosen pair.
 
-Please register your chosen pair in [this spreadsheet](https://imperiallondon-my.sharepoint.com/:x:/g/personal/dt10_ic_ac_uk/EeFLFNk36yhDsaNcpqwI4LoBZa7purL4ZelLxxMigLQhDQ?e=g4mOXm). You'll need to login to Office with your imperial credentials - note that changes to
+Please register your chosen pair in [this spreadsheet](https://imperiallondon-my.sharepoint.com/:x:/g/personal/dt10_ic_ac_uk/ETD0VRT5qABKk-OCRLFocbsBKKMrP0tC8_WWquX7gH0Q1w?e=IenGVg). You'll need to login to Office with your imperial credentials - note that changes to
 the spreadsheet are attributed to the logged in user.
 
 Once pairs are finalised, you'll receive an invitation to a private github repository
 for your pair, which will have the form:
 ```
-https://github.com/LangProc/arch2-2018-cw-{group_name}
+https://github.com/LangProc/arch2-2019-cw-{group_name}
 ```
 Only the people in your group and teaching staff can access this repository.
 
 Interim Submission
 ==================
 
-Prior to your formative assessment on 7 Nov, your code will be pulled and tested to help establish how you are progressing.
+For the formative assessment on 7 Nov, your code will be pulled and tested to help establish how you are progressing.
 If you would like a particular commit to be tested:
 
 - Push to your repo.
 
 - Submit the _hash_ of your desired commit via Blackboard (Assessments > MIPS Simulator: Formative).
-  The deadline for this is Mon 5 Nov at 22:00.
-  
-For groups that submit no hashes, the latest version of your code will be pulled and tested instead.
-For groups that submit two hashes, the earliest hash submitted (in commit history terms) will be used.
-  
-The testing performed will be limited, only checking ADDU and JR functionality.
+  The deadline for this is Fri 8 Nov at 22:00.
 
-Note that this assessment carries no weighting, but attendance is mandatory.
+If a group doesn't submit a hash, then nothing happens - it's up to you. Using this opportunity
+is completely up to you.
+  
+For groups that submit two hashes, the earliest hash submitted (in commit history terms) will be used.
+
+The testing performed will be limited, only checking ADDU and JR functionality
+
 
 Final Submission
 ================
@@ -534,10 +525,39 @@ Submission is via github _and_ blackboard:
   Blackboard (Assessments > MIPS Simulator: Summative). All members should submit the same
   hash (to show agreement). If there is any discrepancy, the
   earliest hash submitted (in commit history terms) will be used.
-  The deadline is Wed 28 Nov at 22:00.
+  The deadline is Fri 22 Nov at 22:00.
   
 - Each individual submits a copy of `reflection.md` to blackboard
   by Wed 28 Nov at 22:00.
+
+Plagiarism
+==========
+
+You are explicitly allowed to publish this coursework as a publicly
+accessibly repo, with the following conditions:
+
+1. You must not make it public until all marking is returned.
+
+2. You must move this `readme.md` into another file called `original-spec.md`,
+   which must still be present in the repo.
+
+3. Your new `readme.md` should be written by you from scratch and should:
+
+  1. Make clear that this was done as part of an assessment, but that the
+     design and implementation is your own.
+
+  2. Link to `original-spec.md` somewhere within your repo.
+
+  3. Include an URL to the master specification.
+
+  You should also use the creation of the new `readme.md` as an opportunity
+  to make your work look different and interesting to people landing on it.
+
+Be aware that the specification for this year is exactly the same as
+last year, and very similar to the year before that (barring submission
+dates). Previous students have published their simulators, both as
+demonstrations of their work, and to share a useful product.
+**If you copy code from a simulator in a public repo, then you are at fault, not the person who published it.**
 
 Additional Notes
 ================
