@@ -528,7 +528,7 @@ Submission is via github _and_ blackboard:
   The deadline is Fri 22 Nov at 22:00.
   
 - Each individual submits a copy of `reflection.md` to blackboard
-  by Wed 28 Nov at 22:00.
+  by Thu 28 Nov at 22:00.
 
 Plagiarism
 ==========
